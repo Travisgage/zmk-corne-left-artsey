@@ -5,38 +5,15 @@
     keymap {
         compatible = "zmk,keymap";
 
-        /* Base layer: ARTSEY keys only */
         base {
             bindings = <
-                &kp A     &kp R     &kp T     &kp S
-                &kp E     &kp Y     &kp I     &kp O
-                &kp SPC   &kp TAB   &kp RET   &kp BSPC
+                /* Row 1 */
+                &none &kp A &kp R &kp T &kp S &none
+                /* Row 2 */
+                &none &kp E &kp Y &kp I &kp O &none
+                /* Row 3 */
+                &none &none &kp SPC &kp TAB &none &none
             >;
         };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        /* Letters */
-        combo_a { timeout-ms = <50>; key-positions = <0 4>; bindings = <&kp A>; };
-        combo_b { timeout-ms = <50>; key-positions = <1 4>; bindings = <&kp B>; };
-        combo_c { timeout-ms = <50>; key-positions = <2 4>; bindings = <&kp C>; };
-        combo_d { timeout-ms = <50>; key-positions = <3 4>; bindings = <&kp D>; };
-
-        combo_e { timeout-ms = <50>; key-positions = <0 5>; bindings = <&kp E>; };
-        combo_f { timeout-ms = <50>; key-positions = <1 5>; bindings = <&kp F>; };
-        combo_g { timeout-ms = <50>; key-positions = <2 5>; bindings = <&kp G>; };
-        combo_h { timeout-ms = <50>; key-positions = <3 5>; bindings = <&kp H>; };
-
-        combo_i { timeout-ms = <50>; key-positions = <0 6>; bindings = <&kp I>; };
-        combo_j { timeout-ms = <50>; key-positions = <1 6>; bindings = <&kp J>; };
-        combo_k { timeout-ms = <50>; key-positions = <2 6>; bindings = <&kp K>; };
-        combo_l { timeout-ms = <50>; key-positions = <3 6>; bindings = <&kp L>; };
-
-        combo_m { timeout-ms = <50>; key-positions = <0 7>; bindings = <&kp M>; };
-        combo_n { timeout-ms = <50>; key-positions = <1 7>; bindings = <&kp N>; };
-        combo_o { timeout-ms = <50>; key-positions = <2 7>; bindings = <&kp O>; };
-        combo_p { timeout-ms = <50>; key-positions = <3 7>; bindings = <&kp P>; };
     };
 };
