@@ -7,11 +7,14 @@
 
         base {
             bindings = <
-                /* Matrix row 0 (top physical row) */
+                /* Matrix row 0 — top physical row */
                 &kp Q   &kp S   &kp T   &kp R   &kp A   &kp W
 
-                /* Matrix row 1 (middle physical row) */
+                /* Matrix row 1 — middle physical row */
                 &kp P   &kp O   &kp I   &kp Y   &kp E   &kp L
+
+                /* Matrix row 2 — unused on this PCB */
+                &none   &none   &none   &none   &none   &none
             >;
         };
     };
@@ -21,7 +24,6 @@
 
         /* ARTSEY Beta 0.9.0 — Left hand */
 
-        /* Row: O I Y E */
         combo_a { timeout-ms = <50>; key-positions = <4 10>; bindings = <&kp A>; };
         combo_b { timeout-ms = <50>; key-positions = <3 10>; bindings = <&kp B>; };
         combo_c { timeout-ms = <50>; key-positions = <2 10>; bindings = <&kp C>; };
