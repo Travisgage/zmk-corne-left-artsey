@@ -6,13 +6,6 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout config repo
-        uses: actions/checkout@v4
-
-      - name: Build ZMK firmware
-        uses: zmkfirmware/zmk-build-action@main
-        with:
-          config: .
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      config_path: .
