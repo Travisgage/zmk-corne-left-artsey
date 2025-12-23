@@ -1,4 +1,4 @@
-#include "corne_left.overlay"
+#include <boards/shields/corne/corne_left.overlay>
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
