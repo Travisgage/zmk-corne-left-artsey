@@ -17,7 +17,7 @@
                 &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N
 
                 /* Thumb cluster (left → right) */
-                &kp SPC &kp TAB &kp ENT
+                &kp SPACE &kp TAB &kp ENTER
             >;
         };
     };
