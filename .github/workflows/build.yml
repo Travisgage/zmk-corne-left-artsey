@@ -12,7 +12,7 @@ jobs:
       - name: Checkout config repo
         uses: actions/checkout@v4
 
-      - name: Initialize ZMK
-        uses: zmkfirmware/zmk-build-action@v1.1.1
+      - name: Build ZMK firmware
+        uses: zmkfirmware/zmk-build-action@main
         with:
           config: .
