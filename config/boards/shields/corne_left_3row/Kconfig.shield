@@ -1,3 +1,0 @@
-config SHIELD_CORNE_LEFT_3ROW
-    bool "Corne Left (3-row matrix)"
-    depends on BOARD_NICE_NANO
