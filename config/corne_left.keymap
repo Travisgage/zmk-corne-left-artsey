@@ -7,17 +7,14 @@
 
         base {
             bindings = <
-                /* Matrix row 0 — top row */
+                /* Matrix row 0 (top row) */
                 &kp Q   &kp S   &kp T   &kp R   &kp A   &kp W
 
-                /* Matrix row 1 — middle row */
+                /* Matrix row 1 (middle row) */
                 &kp P   &kp O   &kp I   &kp Y   &kp E   &kp L
 
-                /* Direct GPIO row — bottom row */
-                &none   &none   &none   &none   &none   &none
-
-                /* Thumb cluster (left to right) */
-                &none   &none   &none   &none
+                /* Thumb cluster (3 keys, left to right) */
+                &none   &none   &none
             >;
         };
     };
