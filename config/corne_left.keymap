@@ -5,15 +5,40 @@
     keymap {
         compatible = "zmk,keymap";
 
-        discover {
+        base {
             bindings = <
-                /* Row 0 */
-                &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6
-                /* Row 1 */
-                &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL
-                /* Row 2 */
-                &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y
+                /* Top row (positions 0–5) */
+                &kp Q   &kp S   &kp T   &kp R   &kp A   &kp W
+
+                /* Middle row (positions 6–11) */
+                &kp P   &kp O   &kp I   &kp Y   &kp E   &kp L
             >;
         };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        /* ARTSEY Beta 0.9.0 — Left-hand letters */
+
+        combo_a { key-positions = <4 10>; bindings = <&kp A>; };
+        combo_b { key-positions = <3 10>; bindings = <&kp B>; };
+        combo_c { key-positions = <2 10>; bindings = <&kp C>; };
+        combo_d { key-positions = <1 10>; bindings = <&kp D>; };
+
+        combo_e { key-positions = <4 9>;  bindings = <&kp E>; };
+        combo_f { key-positions = <3 9>;  bindings = <&kp F>; };
+        combo_g { key-positions = <2 9>;  bindings = <&kp G>; };
+        combo_h { key-positions = <1 9>;  bindings = <&kp H>; };
+
+        combo_i { key-positions = <4 8>;  bindings = <&kp I>; };
+        combo_j { key-positions = <3 8>;  bindings = <&kp J>; };
+        combo_k { key-positions = <2 8>;  bindings = <&kp K>; };
+        combo_l { key-positions = <1 8>;  bindings = <&kp L>; };
+
+        combo_m { key-positions = <4 7>;  bindings = <&kp M>; };
+        combo_n { key-positions = <3 7>;  bindings = <&kp N>; };
+        combo_o { key-positions = <2 7>;  bindings = <&kp O>; };
+        combo_p { key-positions = <1 7>;  bindings = <&kp P>; };
     };
 };
