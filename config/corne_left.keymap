@@ -7,40 +7,18 @@
 
         base {
             bindings = <
-                /* Matrix row 0 (top row) */
-                &kp Q   &kp S   &kp T   &kp R   &kp A   &kp W
+                /* Matrix row 0 — top */
+                &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y
 
-                /* Matrix row 1 (middle row) */
-                &kp P   &kp O   &kp I   &kp Y   &kp E   &kp L
+                /* Matrix row 1 — middle */
+                &kp A  &kp S  &kp D  &kp F  &kp G  &kp H
 
-                /* Thumb cluster (3 keys, left to right) */
-                &none   &none   &none
+                /* Matrix row 2 — bottom */
+                &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N
+
+                /* Thumb cluster (left → right) */
+                &kp SPC &kp TAB &kp ENT
             >;
         };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        /* ARTSEY Beta 0.9.0 — Left hand */
-        combo_a { timeout-ms = <50>; key-positions = <4 10>; bindings = <&kp A>; };
-        combo_b { timeout-ms = <50>; key-positions = <3 10>; bindings = <&kp B>; };
-        combo_c { timeout-ms = <50>; key-positions = <2 10>; bindings = <&kp C>; };
-        combo_d { timeout-ms = <50>; key-positions = <1 10>; bindings = <&kp D>; };
-
-        combo_e { timeout-ms = <50>; key-positions = <4 9>;  bindings = <&kp E>; };
-        combo_f { timeout-ms = <50>; key-positions = <3 9>;  bindings = <&kp F>; };
-        combo_g { timeout-ms = <50>; key-positions = <2 9>;  bindings = <&kp G>; };
-        combo_h { timeout-ms = <50>; key-positions = <1 9>;  bindings = <&kp H>; };
-
-        combo_i { timeout-ms = <50>; key-positions = <4 8>;  bindings = <&kp I>; };
-        combo_j { timeout-ms = <50>; key-positions = <3 8>;  bindings = <&kp J>; };
-        combo_k { timeout-ms = <50>; key-positions = <2 8>;  bindings = <&kp K>; };
-        combo_l { timeout-ms = <50>; key-positions = <1 8>;  bindings = <&kp L>; };
-
-        combo_m { timeout-ms = <50>; key-positions = <4 7>;  bindings = <&kp M>; };
-        combo_n { timeout-ms = <50>; key-positions = <3 7>;  bindings = <&kp N>; };
-        combo_o { timeout-ms = <50>; key-positions = <2 7>;  bindings = <&kp O>; };
-        combo_p { timeout-ms = <50>; key-positions = <1 7>;  bindings = <&kp P>; };
     };
 };
