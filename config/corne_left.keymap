@@ -5,15 +5,18 @@
     keymap {
         compatible = "zmk,keymap";
 
+        /* =========================
+         * Base: ARTSEY Beta 0.9.0
+         * 2×6 corne_left
+         * ========================= */
         base {
             bindings = <
-                /* Matrix row 0 — top physical row */
-                &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6
+                /* Row 0 (top) */
+                &kp LSHIFT   &kp S   &kp T   &kp R   &kp A   &kp LCTRL
 
-                /* Matrix row 1 — middle physical row */
-                &kp Q &kp W &kp E &kp R &kp T &kp Y
+                /* Row 1 (bottom) */
+                &kp LALT     &kp O   &kp I   &kp Y   &kp E   &kp SPACE
             >;
         };
     };
 };
-
