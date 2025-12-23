@@ -7,15 +7,13 @@
 
         base {
             bindings = <
-                /* Matrix row 0 */
+                /* Matrix row 0 — top physical row */
+                &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6
+
+                /* Matrix row 1 — middle physical row */
                 &kp Q &kp W &kp E &kp R &kp T &kp Y
-
-                /* Matrix row 1 */
-                &kp A &kp S &kp D &kp F &kp G &kp H
-
-                /* Matrix row 2 */
-                &kp Z &kp X &kp C &kp V &kp B &kp N
             >;
         };
     };
 };
+
