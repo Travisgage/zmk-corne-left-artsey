@@ -1,0 +1,24 @@
+/* ARTSEY TEST — IF YOU SEE QWERTY, THIS FILE IS NOT LOADED */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        /* =========================
+         * Base: ARTSEY Beta 0.9.0
+         * 2×6 corne_left
+         * ========================= */
+        base {
+            bindings = <
+                /* Row 0 (top) */
+                &kp LSHIFT   &kp S   &kp T   &kp R   &kp A   &kp LCTRL
+
+                /* Row 1 (bottom) */
+                &kp LALT     &kp O   &kp I   &kp Y   &kp E   &kp SPACE
+            >;
+        };
+    };
+};
